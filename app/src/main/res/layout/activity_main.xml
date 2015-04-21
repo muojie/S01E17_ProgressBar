@@ -7,7 +7,7 @@
 
     <ProgressBar
         android:id="@+id/firstProgressBar"
-        style="@style/Widget.AppCompat.ProgressBar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
         android:max="200"
         android:progress="100"
         android:secondaryProgress="150"
@@ -27,6 +27,27 @@
         android:layout_toRightOf="@id/firstButton"
         android:layout_alignBaseline="@+id/firstButton"
         android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <SeekBar
+        android:id="@+id/firstSeekBar"
+        android:layout_above="@+id/firstRatingBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RatingBar
+        android:id="@+id/firstRatingBar"
+        android:layout_above="@+id/button"
+        android:numStars="6"
+        android:stepSize="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_alignParentBottom="true"
+        android:id="@+id/button"
+        android:text="button"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
 </RelativeLayout>
